@@ -1,0 +1,26 @@
+{
+  "name": "mp-blog",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxpolski/mp-blog.git"
+  },
+  "author": "Maxpolski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxpolski/mp-blog/issues"
+  },
+  "homepage": "https://github.com/maxpolski/mp-blog#readme",
+  "dependencies": {
+    "babel-polyfill": "^6.3.14",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "babel-register": "^6.4.3",
+    "express": "^4.13.4"
+  }
+}
