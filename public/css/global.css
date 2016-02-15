@@ -1,6 +1,41 @@
 *{
   padding: 0;
   margin: 0;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+
+.float-fixer {
+  clear: both;
+}
+
+.color-transition {
+  -webkit-transition: color 0.2s ease-out 0s;
+  -moz-transition: color 0.2s ease-out 0s;
+  -o-transition: color 0.2s ease-out 0s;
+  transition: color 0.2s ease-out 0s;
+}
+
+.animated-cross i {
+  transform: rotate(0deg);
+  position: relative;
+  display: block;
+  height: 1px;
+  width: 15px;
+  background-color: black;
+}
+
+.animated-cross i:last-child {
+  top: 2px;
+}
+
+.animated-cross:hover i {
+  transform: rotate(45deg);
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.animated-cross:hover i:last-child {
+  top:0;
+  transform: rotate(-45deg);
 }
 
 .top-menu {
@@ -9,26 +44,39 @@
 }
 
 .top-menu .logo {
-  display: inline-block;
+  font-size: 42px;
+  display: block;
+  float: left;
   margin-left: 10px;
-  padding: 10px;
   box-sizing: border-box;
-  height: 50px;
   width: 50px;
-  border: 3px solid #e51c23;
+  color: #00bcd4;
+  cursor: pointer;
+}
+
+.top-menu .logo:hover {
+  color: #80deea;
 }
 
 .menu-elements {
-  display: inline-block;
+  display: block;
+  float: left;
   position: relative;
   height: 100%;
   margin-left: 300px;
 }
 
 .menu-elements li {
-  display: inline-block;
+  display: block;
+  float: left;
   position: relative;
   height: 100%;
+  padding: 16px;
+  cursor: pointer;
+}
+
+.menu-elements li:hover {
+  color: white;
 }
 
 .menu-elements li.active {
